@@ -23760,7 +23760,7 @@ function nj() {
                                                 "a",
                                                 {
                                                     href: p.href,
-                                                    onClick: () => r(!1),
+                                                    onClick: (e) => { e.preventDefault(); r(!1); const tg = document.querySelector(p.href); if(tg) setTimeout(() => tg.scrollIntoView({behavior: "smooth"}), 100); },
                                                     className:
                                                         "font-karla text-base text-white/90 hover:text-teal transition-colors",
                                                     children: p.label,
