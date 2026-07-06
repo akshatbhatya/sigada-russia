@@ -23565,8 +23565,8 @@ const qO = [
         },
     ],
     ZO = [
-        { value: 12, suffix: "+", label: "Лет опыта" },
-        { value: 3800, suffix: "+", label: "Пациентов" },
+        { value: 2, suffix: "+", label: "Лет опыта" },
+        { value: 300, suffix: "+", label: "Пациентов" },
         { value: 98, suffix: "%", label: "Довольных клиентов" },
         { value: 15, suffix: "+", label: "Наград" },
     ],
@@ -23630,7 +23630,7 @@ function ej({ target: e, suffix: t }) {
         w.useEffect(() => {
             if (!i) return;
             let o = 0;
-            const l = e / (2e3 / 16),
+            const l = e / (3e3 / 16),
                 u = setInterval(() => {
                     (o += l), o >= e ? (r(e), clearInterval(u)) : r(Math.floor(o));
                 }, 16);
